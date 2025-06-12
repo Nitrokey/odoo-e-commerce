@@ -27,4 +27,5 @@ threshold, sell regardless and show product-specific notification for empty
             "website_sale_stock_notification/static/src/xml/*.xml",
         ],
     },
+    "pre_uninstall_hook": "pre_uninstall_hook",
 }
