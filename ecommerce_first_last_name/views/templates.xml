@@ -13,7 +13,7 @@
                     type="text"
                     name="name"
                     t-attf-class="form-control #{error.get('name') and 'is-invalid' or ''}"
-                    t-att-value="checkout.get('name') and ' '.join(checkout.get('name').split(' ')[:1]) or ''"
+                    t-att-value="'name' in checkout and ' '.join((checkout['name'] or '').split(' ')[:1]) or ''"
                 />
             </div>
             <div
